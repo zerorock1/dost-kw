@@ -1,0 +1,116 @@
+.listado-blog {
+  margin-bottom: 0px;
+}
+.listado-blog h3 {
+  margin-top: 20px;
+  color: #494949;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.listado-blog .moldulos-container {
+  position: relative;
+}
+.listado-blog .moldulos-container div.modulo {
+  position: relative;
+  margin-top: 40px;
+}
+.listado-blog .moldulos-container div.modulo img {
+  width: 100%;
+}
+.listado-blog .moldulos-container div.modulo div.text {
+  padding: 15px;
+}
+.listado-blog .moldulos-container div.modulo div.text p.text {
+  font-size: 13px;
+  line-height: 1.2em;
+  font-size: 400;
+  color: #494949;
+}
+.listado-blog .moldulos-container div.modulo div.text p.fecha {
+  font-size: 14px;
+}
+.listado-blog .moldulos-container div.modulo-gr {
+  position: relative;
+  margin-top: 40px;
+}
+.listado-blog .moldulos-container div.modulo-gr img {
+  width: 100%;
+}
+.listado-blog .moldulos-container div.modulo-gr div.text {
+  top: 0;
+  bottom: inherit;
+  max-width: 50%;
+}
+.listado-blog .moldulos-container div.modulo-gr div.text p.text {
+  font-size: 20px;
+}
+.listado-blog div.container-noticia {
+  max-width: 870px;
+  margin: 0 auto;
+}
+.listado-blog div.container-noticia img {
+  width: 100%;
+}
+.listado-blog div.container-noticia p {
+  color: #969696;
+  font-size: 0.875rem;
+}
+.listado-blog div.container-noticia p.entradilla {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  color: #404040;
+}
+.listado-blog div.container-noticia p.fecha {
+  font-size: 0.875rem;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.listado-blog div.container-noticia p.foto-footer {
+  font-size: 0.75rem;
+  margin-top: 40px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.listado-blog div.container-noticia blockquote {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+div.social {
+  margin-top: 40px;
+}
+div.social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-top: 1px solid black;
+}
+div.social ul li {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  padding: 8px;
+  padding-top: 2px;
+  padding-bottom: 0;
+  border: 1px solid black;
+  border-top: none;
+}
+div.social ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+div.social ul li:hover {
+  background-color: white;
+  border: 1px solid black;
+  border-top: none;
+}
+div.social ul li:hover a {
+  color: black;
+}

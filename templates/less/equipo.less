@@ -1,0 +1,97 @@
+.modulos-equpo
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .modulo{
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+
+        .img{
+            overflow: hidden;
+        }
+        
+
+        .img img
+        {
+           opacity: 0.8;
+            transition: transform 5s ease;
+            
+            width: 100%;
+            
+        }
+
+        .img img:hover{
+            transform: scale(1.2);
+            opacity:1;
+            cursor: pointer;
+        }
+
+
+        p{
+            color:#494949;
+            margin: 0;
+            padding: 0;
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+
+        p.title{
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+
+    }
+}
+
+.modulo-team-hire
+{
+   
+
+    .content-container
+    {
+        border:0;
+
+        p{
+            width: 100%;
+            text-align: center;
+            color:white;
+            font-size: 2.375rem;
+        }
+
+        text-align: center;
+
+
+        .send{
+            width: 100%;
+
+            font-size: 14px;
+            background: black;
+
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border:1px solid black;
+            
+            max-width: 170px;
+            margin-left: 10px;  
+            color:#FFF;
+            text-decoration: none;
+        }
+
+        .send:hover{
+
+            background: transparent;
+            border:1px solid white;
+            color:white;
+   
+        }
+    }
+}

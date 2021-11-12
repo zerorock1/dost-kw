@@ -1,0 +1,239 @@
+.listado-viviendas .modulo {
+  padding: 10px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.listado-viviendas .modulo a {
+  text-decoration: none;
+}
+.listado-viviendas .modulo .img {
+  overflow: hidden;
+}
+.listado-viviendas .modulo .img img {
+  opacity: 0.8;
+  transition: transform 5s ease;
+  width: 100%;
+}
+.listado-viviendas .modulo .img img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  cursor: pointer;
+}
+.listado-viviendas .modulo p {
+  color: #494949;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.listado-viviendas .modulo p.title {
+  margin-top: 30px;
+  font-weight: 700;
+}
+.listado-viviendas .modulo p.venta {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 20px;
+}
+.listado-viviendas .modulo p.poblacion {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #494949;
+  margin-top: 40px;
+}
+.listado-viviendas .modulo p.poblacion span {
+  color: #C10000;
+  font-weight: 100;
+  font-style: italic;
+}
+.listado-viviendas .modulo p.datos {
+  font-size: 0.875rem;
+  color: #494949;
+  margin-top: 40px;
+}
+.listado-viviendas .modulo p.datos span {
+  font-weight: 700;
+}
+.listado-viviendas .modulo p.descrip {
+  font-size: 0.875rem;
+  color: #969696;
+  margin-top: 40px;
+  font-weight: 400;
+  width: 95%;
+}
+.form-buscador {
+  margin-top: 50px;
+}
+.form-buscador select {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #868686;
+}
+.form-buscador p.total {
+  font-size: 0.875rem;
+  color: #494949;
+  margin-top: 50px;
+}
+.owl-nav {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+.owl-nav span {
+  color: white;
+  font-size: 80px;
+  font-weight: 100;
+}
+.owl-nav .owl-prev {
+  float: left;
+}
+.owl-nav .owl-next {
+  float: right;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+}
+.ficha-vivienda {
+  display: block;
+  min-height: 100vh;
+}
+.ficha-vivienda div.textos {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.ficha-vivienda div.textos .ficha-top-izq {
+  width: 50%;
+}
+.ficha-vivienda div.textos .ficha-top-der {
+  width: 50%;
+}
+.ficha-vivienda div.textos p {
+  color: #494949;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.ficha-vivienda div.textos p.title {
+  font-weight: 700;
+}
+.ficha-vivienda div.textos p.venta {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: right;
+}
+.ficha-vivienda div.textos p.poblacion {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #494949;
+}
+.ficha-vivienda div.textos p.poblacion span {
+  color: #C10000;
+  font-weight: 100;
+  font-style: italic;
+}
+.ficha-vivienda div.textos p.datos {
+  font-size: 0.875rem;
+  color: #494949;
+  margin-top: 40px;
+}
+.ficha-vivienda div.textos p.datos span {
+  font-weight: 700;
+}
+.ficha-vivienda div.textos p.descrip {
+  font-size: 0.875rem;
+  color: #969696;
+  font-weight: 400;
+  width: 95%;
+}
+.ficha-vivienda .owl-carousel {
+  width: 100%;
+}
+.caracteristicas-table {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F4F4F4;
+}
+.caracteristicas-table h3 {
+  font-size: 1.125em;
+  font-size: 100;
+  font-style: italic;
+  color: #C10000;
+  margin-bottom: 50px;
+}
+.caracteristicas-table table {
+  width: 100%;
+  font-size: 0.875rem;
+}
+.caracteristicas-table table tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+.caracteristicas-table table td.item {
+  font-weight: bold;
+  max-width: 100px;
+}
+.caracteristicas-table .map {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modulo-contacta-rojo {
+  background-color: #C10000;
+  min-height: 100%;
+}
+.modulo-contacta-rojo div.container {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  color: white;
+  min-height: 100%;
+  height: 100%;
+}
+.modulo-contacta-rojo div.container p.contactanos {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 100;
+}
+.modulo-contacta-rojo div.container p.contactanos span {
+  font-weight: bold;
+}
+.modulo-contacta-rojo div.container input {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 15px;
+  border: none;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+.modulo-contacta-rojo div.container input[type="submit"] {
+  background-color: white;
+  color: #494949;
+}
+.modulo-contacta-rojo div.container input[type="submit"]:hover {
+  background-color: transparent;
+  color: white;
+}
+.modulo-contacta-rojo div.container input::placeholder {
+  color: white;
+}
+.modulo-contacta-rojo div.container .sele {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.modulo-contacta-rojo div.container .sele div {
+  width: 100%;
+  font-size: 9px;
+}
+.modulo-contacta-rojo div.container .sele div.check {
+  max-width: 30px;
+}
