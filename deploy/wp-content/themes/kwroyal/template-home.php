@@ -45,10 +45,10 @@ get_header();
             <div class="row finder-home">
              <div class="col">
                     <ul>
-                        <li class="selected"><a href="">COMPRAR</a></li>
-                        <!-- <li class="separador">|</li>
-                        <li><a href="">VENDER</a></li>
-                        <li class="separador">|</li>
+                        <li><a href="">COMPRAR</a></li>
+                    <li class="separador">|</li>
+                        <li><a href="">ALQUILAR</a></li>
+                        <!--<li class="separador">|</li>
                         <li><a href="">ALQUILAR</a></li> -->
                     </ul>
                 </div>
