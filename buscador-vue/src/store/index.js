@@ -47,8 +47,7 @@ export default new Vuex.Store({
       state.viviendas = payload.viviendas
       state.viviendastotal = payload.viviendas
       state.totalpropiedades = payload.datos.total
-      console.log(state.totalpropiedades)
-      console.log(state.viviendastotal)
+
       
       if(window.vienedelahome == true)
       {
@@ -75,7 +74,7 @@ export default new Vuex.Store({
 
     DESCRIPCION_VIVIENDA_SELECCIONADA: (state, payload) => {
       state.descripcionviviendaseleccionada = payload
-      console.log(payload)
+
     },
     
 
@@ -94,7 +93,7 @@ export default new Vuex.Store({
           
           state.viviendastotal = state.viviendastotal.concat(payload.viviendas)
           state.viviendas = state.viviendastotal
-          console.log(state.viviendastotal.length)
+
     },
     
   },
@@ -145,6 +144,7 @@ export default new Vuex.Store({
           commit('SELECCIONA_VIVIENDA',response.data.ficha[1])
           commit('FOTOS_VIVIENDA_SELECCIONADA',response.data.fotos[response.data.ficha[1].cod_ofer])
           commit('DESCRIPCION_VIVIENDA_SELECCIONADA',response.data.descripciones[response.data.ficha[1].cod_ofer][1].descrip)
+          console.log(response.data)
           
         })
 
@@ -215,8 +215,7 @@ export default new Vuex.Store({
           {
               if(item.name == "ciudad")
               {
-                  console.log("FILTRO CIUDAD")
-                  console.log(item)
+
                   newpromos = newpromos.filter((itemciudad)=>{
                     return itemciudad.key_loca == item.payload
                   })
@@ -226,11 +225,9 @@ export default new Vuex.Store({
 
               if(item.name == "tipovivienda")
               {
-                console.log("FILTRO TIPO")
-                console.log(item)
+
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
+
                     return itemtipos.key_tipo == item.payload
                   })
               }
@@ -238,11 +235,9 @@ export default new Vuex.Store({
 
               if(item.name == "preciodesde")
               {
-                console.log("FILTRO PRECIO DESDE")
-                console.log(item)
+
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
+
                     return itemtipos.precioreal > item.payload
                   })
               }
@@ -251,11 +246,9 @@ export default new Vuex.Store({
 
               if(item.name == "preciohasta")
               {
-                console.log("FILTRO HASTA")
-                console.log(item)
+
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
+
                     return itemtipos.precioreal < item.payload
                   })
               }
@@ -263,23 +256,20 @@ export default new Vuex.Store({
 
               if(item.name == "habitaciones")
               {
-                console.log("FILTRO HABI")
-                console.log(item)
+
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
-                    return itemtipos.habitaciones == item.payload
+         
+                    let totalhabitaciones = itemtipos.habitaciones+itemtipos.habdobles
+                    return totalhabitaciones == item.payload
                   })
               }
 
 
               if(item.name == "superminima")
               {
-                console.log("FILTRO SUP MIN")
-                console.log(item)
+  
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
+ 
                     return itemtipos.m_cons > item.payload
                   })
               }
@@ -289,11 +279,9 @@ export default new Vuex.Store({
               if(item.name == "supermaxima")
               {
 
-                console.log("FILTRO SUP MAX")
-                console.log(item)
+
                   newpromos = newpromos.filter((itemtipos)=>{
-                    //return item.
-                    //console.log(item.key_loca)
+
                     return itemtipos.m_cons < item.payload
                   })
               }  
@@ -301,7 +289,7 @@ export default new Vuex.Store({
           }
         })
 
-        console.log(newpromos)
+
 
         commit('FILTROS',newpromos)
       },

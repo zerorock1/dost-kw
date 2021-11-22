@@ -20,7 +20,7 @@
                 </p>
                 <p class="datos">
                   <span>Habitaciones:</span>
-                  {{ viviendaseleccionada.habitaciones }}<br />
+                  {{ viviendaseleccionada.total_hab }}<br />
                   <span>Superficie:</span>
                   {{ viviendaseleccionada.m_cons }} m2<br />
                   <span>Baños:</span> {{ viviendaseleccionada.banyos }}<br />
@@ -56,7 +56,7 @@
            <div class="textos">
               <p class="descrip">
                 <strong>Descripción</strong><br>
-                {{ ladescrip }}
+                <span v-html="ladescrip"></span>
               </p>
             </div>
 
@@ -100,7 +100,9 @@ export default {
         },
         ladescrip()
         {
-          return this.$store.state.descripcionviviendaseleccionada
+          const regex = /~/g;
+          let descrip = this.$store.state.descripcionviviendaseleccionada.replace(regex,'<br>')
+          return descrip
           
         }
     },

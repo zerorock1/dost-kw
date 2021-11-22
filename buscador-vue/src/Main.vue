@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div>
     <router-view></router-view>

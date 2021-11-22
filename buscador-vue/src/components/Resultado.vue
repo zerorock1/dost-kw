@@ -23,7 +23,7 @@
                     <span>{{vivienda.ciudad}}</span><br>
                     {{vivienda.nbtipo}}</p>
                     <p class="datos">
-                    <span>Habitaciones:</span> {{vivienda.habitaciones}}<br>
+                    <span>Habitaciones:</span> {{vivienda.total_hab}}<br>
                     <span>Superficie:</span> {{vivienda.m_cons}} m2<br>
                     <span>Baños:</span> {{vivienda.banyos}}<br>
                     <span>Ref:</span> {{vivienda.ref}}
@@ -71,8 +71,7 @@ export default {
   {
       seleccionaVivienda(item)
       {
-          //console.log(item)
-          //this.$store.dispatch("seleccionavivienda",item)
+
           this.$router.push('ficha/'+item.cod_ofer)
       },
       cargamas()

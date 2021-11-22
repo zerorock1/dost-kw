@@ -192,7 +192,7 @@
           <div class="col-md-3" v-if="!camposactivos">
             <br />
             <label for=""></label>
-            <button class="btn btn-success" @click.prevent="quitarfiltros()">
+            <button class="btn btn-success" @click.prevent="quitarfiltros()" style="background-color:#C10000;border-color:#C10000;">
               <i class="fa fa-times" aria-hidden="true"></i> Quitar Filtros
             </button>
           </div>
@@ -260,8 +260,7 @@ export default {
     },
 
     changeciudad(event) {
-      //console.log(event.target.value)
-      //this.$store.dispatch("dameOfertasCiudad",event.target.value);
+
 
       this.$store.dispatch("filtros", {
         filtro: "ciudad",
@@ -284,7 +283,7 @@ export default {
     },
 
     changepreciohasta(event) {
-      //console.log(event.target.value)
+
       this.$store.dispatch("filtros", {
         filtro: "preciohasta",
         payload: event.target.value,
